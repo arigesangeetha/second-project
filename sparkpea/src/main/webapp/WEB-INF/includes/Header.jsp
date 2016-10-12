@@ -24,7 +24,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<sec:authorize access="isAuthenticated()">
 					<li><a style="color: white;font-family:algerian">Hello  <b><sec:authentication property="principal.username" /></b></a></li>
-						<li><a href="perform_logout"><span
+						<li><a href="${pageContext.request.contextPath}/perform_logout"><span
 								class="glyphicon glyphicon-log-out" style="color: white"> LOGOUT</span></a></li>
 					</sec:authorize>
 					<sec:authorize access="!isAuthenticated()">
